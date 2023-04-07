@@ -69,7 +69,35 @@ void Algorithm(int low, int high) {
 		mov_count++;
 	}
 	if (low < zyn) {
-		swap(low, zyn)
+		swap(low, zyn);
 			mov_count++;
 	}
+	Algorithm(low, zyn - 1);
+
+	Algorithm(zyn + 1, high);
+
 }
+
+void display() {
+	cout << "\n====================" << endl;
+	cout << "\nArray yang tersusun" << endl;
+	cout << "\n====================" << endl;
+
+	for (int i = 0;i < n; i++) {
+		cout << zayyan[i] << "" << endl;
+	}
+	cout << "\n\nJumlah data yang di bandingkan : " << cmp_count << endl;
+	cout << "Jumlah data yang berpindah : " << mov_count << endl;
+
+}
+
+int main() {
+	input();
+	Algorithm(0, n - 1);
+	display();
+
+	return 0;
+}
+
+
+
