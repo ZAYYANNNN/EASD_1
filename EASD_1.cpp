@@ -1,6 +1,6 @@
 //karena algoritma bisa mempermudah
 // static dan dynamic
-
+// ukuran masukan,struktur data yang di gunakan, kecepatan hardware,jenis operasi yang di gunakan
 // selection sort
 // quadratic = bubblesort,selectionsort,insertionsort - long linear= quick sort, merge sort
 
